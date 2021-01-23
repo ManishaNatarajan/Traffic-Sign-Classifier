@@ -31,7 +31,11 @@ The goals / steps of this project are the following:
 [image8]: ./test_images/3.jpg "Traffic Sign 3"
 [image9]: ./test_images/4.jpg "Traffic Sign 4"
 [image10]: ./test_images/5.jpg "Traffic Sign 5"
-[image11]: ./output_images/top_5.png "Traffic Sign 5"
+[image11]: ./output_images/top_5_0.png "Top 5"
+[image12]: ./output_images/top_5_1.png "Top 5"
+[image13]: ./output_images/top_5_2.png "Top 5"
+[image14]: ./output_images/top_5_3.png "Top 5"
+[image15]: ./output_images/top_5_4.png "Top 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -148,7 +152,7 @@ hyperparameters.
 My final model results were:
 * training set accuracy of **0.981**
 * validation set accuracy of **0.953** 
-* test set accuracy of **0.927**
+* test set accuracy of **0.923**
 
 I chose to use the same LeNet architecture for the Traffic Sign Classification Task. I chose this
 architecture as this architecture has already been utilized in Dr.LeCun's paper and they show
@@ -211,5 +215,9 @@ For the last three images, the model gets the prediction right by a substantial 
 right of way at next intersection, and keep right. The top 5 probabilities along with the image are shown below:
 
 ![Top 5][image11]
+![Top 5][image12]
+![Top 5][image13]
+![Top 5][image14]
+![Top 5][image15]
 
 
