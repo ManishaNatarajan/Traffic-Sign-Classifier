@@ -150,8 +150,8 @@ hyperparameters.
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of **0.981**
-* validation set accuracy of **0.953** 
+* training set accuracy of **0.983**
+* validation set accuracy of **0.955** 
 * test set accuracy of **0.923**
 
 I chose to use the same LeNet architecture for the Traffic Sign Classification Task. I chose this
@@ -195,23 +195,22 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Road Work      		| Road Work   									| 
-| Stop       			| General Caution 								|
+| Road Work      		| Traffic Signal								| 
+| Stop       			| Stop          								|
 | 60 km/h				| 60 km/h										|
 | Right of way     		| Right of way					 				|
 | Keep right			| Keep right      							    |
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of given images,
-which is 92.7%
+which is 92.3%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 23rd cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a road work sign (probability of 0.6), and the image does contain a stop sign.
-The model has high difficulty in predicting the stop sign. This might be because of the orientation of the sign.
-For the last three images, the model gets the prediction right by a substantial margin - 60km/h speed limit, 
+The model has high difficulty in predicting the road work sign. This might be because of the orientation of the sign, and the 
+black boundaries at the top and bottom. For the last four images, the model gets the prediction right by a substantial margin - stop, 60km/h speed limit, 
 right of way at next intersection, and keep right. The top 5 probabilities along with the image are shown below:
 
 ![Top 5][image11]
